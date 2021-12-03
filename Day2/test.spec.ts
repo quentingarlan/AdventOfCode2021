@@ -36,7 +36,7 @@ const result = dive2.Dive(input);
 
         it('should return 1749524700', function () {
             const result = dive2.Dive(input.inputTest);
-            assert.equal(result, 1);
+            assert.equal(result, 1749524700);
         });
      
     });
