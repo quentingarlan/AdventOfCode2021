@@ -22,9 +22,9 @@ describe('Advent Calendar', function () {
             assert.equal(result, 198);
         });
 
-        it('should return ', function () {
+        it('should return 1092896', function () {
             const result = binaryDiagnostic1.BinaryDiagnostic(puzzleInput.inputTest);
-            assert.equal(result, 1);
+            assert.equal(result, 1092896);
         });
 
     });
@@ -47,9 +47,9 @@ describe('Advent Calendar', function () {
             assert.equal(result, 230);
         });
 
-        it('should return ', function () {
+        it('should return 4672151', function () {
             const result = binaryDiagnostic2.BinaryDiagnostic(puzzleInput.inputTest);
-            assert.equal(result, 1);
+            assert.equal(result, 4672151);
         });
 
     });

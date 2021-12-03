@@ -2,16 +2,13 @@ export function BinaryDiagnostic(advList: string): number {
     let reports = advList.split('\n');
 
     const oxygenRatingBinary = GetOxygenGeneratorRating(reports);
-
     const oxygenRatingArray = Array.from(oxygenRatingBinary);
     const oxygenRatingDecimal = binaryToInteger(oxygenRatingArray)
-    console.log("oxygenRatingDecimal", oxygenRatingDecimal)
 
     const CO2ScrubberRatingBinary = GetCO2ScrubberRating(reports);
-
     const CO2ScrubberRatingArray = Array.from(CO2ScrubberRatingBinary);
     const CO2ScrubberRatingDecimal = binaryToInteger(CO2ScrubberRatingArray)
-    console.log("CO2ScrubberRatingDecimal", CO2ScrubberRatingDecimal)
+
     return CO2ScrubberRatingDecimal * oxygenRatingDecimal;
 }
 
@@ -46,7 +43,6 @@ function GetCO2ScrubberRating(reports: string[]): string {
     for (let i = 0; i < reports.length; i++) {
         let leastCommonBit = GetLeastCommon(correctReports, i)
         correctReports = correctReports.filter((report) => parseInt(report[i]) === leastCommonBit);
-        console.log("correctReports", correctReports)
         if (correctReports.length === 1) {
             break;
         }
@@ -61,7 +57,6 @@ function GetLeastCommon(reports: string[], index: number): number {
             bitCount++;
         }
     })
-    console.log("bitCount", bitCount)
     if (bitCount <= reports.length / 2) {
         return 0;
     } else {
