@@ -18,16 +18,9 @@ describe('Advent Calendar', function () {
 
     });
     describe('Lanternfish2', function () {
-        it('should return 26984457539', function () {
-            const input: string = `3,4,3,1,2`;
-            const result = Lanternfish2.Lanternfish(input);
-            assert.equal(result, 26984457539);
+        it('should return 0', function () {
+            const result = Lanternfish2.Lanternfish(puzzleInput.inputTest);
+            assert.equal(result, 0);
         });
-
-        // it('should return 345387', function () {
-        //     const result = Lanternfish1.Lanternfish(puzzleInput.inputTest);
-        //     assert.equal(result, 345387);
-        // });
-
     });
 });
