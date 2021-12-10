@@ -14,8 +14,7 @@ export function TreacheryOfWhales(advList: string): number {
 function Median(input: number[]): number {
     let median = 0;
     let arrayLength = input.length;
-    let arrayLengthIsEven = arrayLength % 2 == 0 ? true : false;
-    if (arrayLengthIsEven) {
+    if (arrayLength % 2 == 0) {
         median = input[arrayLength / 2]
     } else {
         median = input[arrayLength / 2] - input[arrayLength / 2 - 1]
