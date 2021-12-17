@@ -27,6 +27,9 @@ export function HydrothermalVenture(advList: string): number {
                     diagram[j][mov.x1]++
                 }
             }
+        }else{
+            //deal with diagonals
+
         }
     })
 
