@@ -5,7 +5,7 @@
   "main": "index.js",
   "scripts": {
     "start": "tsc && node dist/app.js",
-    "test": "mocha --require ts-node/register './Day11/test.spec.ts'"
+    "test": "mocha --require ts-node/register './Day13/test.spec.ts'"
   },
   "repository": {
     "type": "git",
